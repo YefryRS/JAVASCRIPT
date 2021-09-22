@@ -1,0 +1,39 @@
+En este taller se calculara el perimetro y area de diversas figuras geometricas.
+
+L (significa lado)
+B (Base)
+A (Altura)
+
+Cuadrado: 
+a) perimetro: hace referencia cuanto mide el borde del cuadrado, y en este caso multiplicariamos uno de sus lados por 4, pues todos los lados son exactamente iguales. Formula: L*4
+b) area: aqui multiplicamos 1 de los lados por otro de los lados, o del mismo porque todos son iguales. Formula: L*L.
+
+Triangulo: 
+a) perimetro: Formula : L + L+ L.
+b) area: Formula : (B * A) / 2
+
+Circulos:
+a) perimetro(circunferencia): Aqui necesitamos del radio que es una linea que se traza desde en centro del Circulo a cualquier zona, y el diametro que seria la medida de un extremo de un lado al otro extremo. Formula : Diametro *PI
+b) Area: Radio^2 * PI.
+
+Triangulo Isosceles: La longitud de los lados es la misma, 
+longitud 10cm
+base 4 cm
+
+necesimos aplicar el teorema de pitagoras, para ello, dividiremos la base entre 2, pues lo dos lados son iguales. Con esto podemos aplicar el teorema de pitagoras. Recordemos que la hipotenusa es la linea que esta al frente del angulo de los 90°
+
+la longitud sera hipotenusa = 10
+base sera cateto 2 = 2
+
+cateto 1= ?
+
+cateto1^2 + cateto2^2 = hipotenusa^2
+
+cateto1^2 + 2^2 = 10^2
+cateto1^2 + 4 = 100
+A continuacion el cateto 2 lo cambiamos de lado
+cateto1^2 = 100 - 4
+cateto1^2 = 96
+cateto1^2 =  Raiz cuadrada de 96  => 9.79
+
+

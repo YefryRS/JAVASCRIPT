@@ -1,0 +1,9 @@
+1. No podemos darle el nombre a una variable o constante, igual a una palabra reservada del lenguaje de programacion.
+
+2. Los nombres de las variable y constantes, deben tener un nombre significativo a lo que almacenaran. Por ejemplo => let edad : 20;
+
+3. Puedes usar letras, numeros y guion bajo para definir tus variables y constantes, pero no debes iniciar el nombre con un numero.
+
+4. No pueden contener caracteres especiales a excepcion del signo de "$". 
+
+5. Usar CamelCase: por ejemplo => let nombreCompleto; la primera palabra en minuscula y la segunda en mayuscula.

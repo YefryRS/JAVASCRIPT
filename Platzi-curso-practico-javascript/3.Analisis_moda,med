@@ -1,0 +1,12 @@
+Promedio (media aritmetica): Esta no nos servira cuando uno de los elementos sea excepcionalmente diferente al resto, todos los valores deben tener un valor relativamente parecido
+Formula = (venta1 + venta2 + venta3) / cantidad de ventas
+
+Mediana: es ordenar varios elementos de menor a mayor y la mediana seria el elemento que este en la mitad
+por ejemplo : 450, 500, 600 => 500 seria la mediana. En caso de que sean pares sumamos los dos de la mitad y lo divimos entre dos. Por ejemplo : 
+450, 500, 600, 650 => (500 + 600) /2 y el resultado seria la mediana.
+
+Moda: es el elemento o elementos que mas se repite en una lista, por ejemplo: 1,10,,3,24,14,25, 14,14,14. Aqui la moda seria 14. 
+
+400,340,410,500,490
+
+mediana= 410

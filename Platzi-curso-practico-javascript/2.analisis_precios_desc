@@ -1,0 +1,14 @@
+El problema es que les decimos a nuestros clientes el precio original del producto y el porcentaje de descuento de este, pero no les estamos diciendo cuanto terminaran pagando en total con el descuento, por tanto ellos no se animan a pagar.
+
+Asi que haremos un programa que le diga a nuestros clientes cuanto van a pagar incluyendo el descuento
+
+Por ejemplo
+
+precio original = 100
+descuento = 15%
+compra = 100* 85% = 85
+
+p (precio)
+D(descuento)
+
+Formula = (P * (100% - D)) / 100%

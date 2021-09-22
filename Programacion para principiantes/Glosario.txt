@@ -1,0 +1,39 @@
+Glosario:
+
+* Lenguaje de programacion : Es la forma de decirle a la computadora que debe hacer y como hacerlo, es un idioma intermediario que nos ayuda a transmitirle ordenes a la computadora.
+
+*Hardware : es la parte fisica de la computadora, todo lo que podemos tocar.
+
+* Software: No lo podemos tocar, son los procesos que realiza la computadora. Es la parte logica que hace la tarea.
+
+* Lenguaje de alto nivel : Es un lenguaje parecido al español o el ingles. Como por ejemplo Javascript
+
+*Lenguaje de bajo nivel : Es un lenguaje mas directo a las computadoras y no se parece a como hablan los seres humanos. Por ejemplo : Binario, lenguaje de maquina, ensamblador.
+
+*Servidor : computadora con un acceso restringido y centralizado
+
+* Framework o marco de trabajo : Conjunto de reglas y normas para la correcta utilizacion del lenguaje
+
+*Cliente : Computadora que va a ejecitar neustro programa.
+
+*Compilador : Toma todo el codigo que escribimos y lo traduce a un lenguaje de maquina. 
+
+* Interpretes : Toma linea por linea  y lo traduce cuando sea necesario
+
+*Algoritmo : Es un proceso para resolver un problema. Por lo general es ordenado y secuencial.
+
+* Variable : Es el espacio en memoria donde podemos almacenar datos y estos datos pueden cambiar en un futuro.
+
+* Palabra reservada : es una palabra que no podemos usar fuera de ese contexto
+
+* Renderizar : Que se muestre en pantalla.
+
+*ciclos: Ejecutan las mismas lineas de codigo una y otra vez de forma consecutiva, hasta que la condicion deje de cumplirse.
+
+*Funciones : Es un conjunto de lineas de codigo que realizan una tarea especifica y pueden retornar algo. Nos ayudara a no usar un mismo codigo varias veces
+
+*Arrays (arreglos) : Son un conjunto de cosas similares
+
+* Objeto : Es una representacion abstracta de una cosa que existe en la vida real. Los objetos son simples variables que dentro de ellas tienen propiedades.
+
+* Clases : Al igual que los objetos, pueden ser representaciones abastractas de cosas. Podriamos verlo que son como los moldes para hacer galletas.
