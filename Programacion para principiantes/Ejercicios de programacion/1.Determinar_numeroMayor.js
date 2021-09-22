@@ -18,3 +18,11 @@ function DeterminarNumeroMayor (a,b) {
         console.log(b + " es el mayor y " + a + " es el menor");
     }
 }
+
+/* 4) Programa una función que repita un texto X veces, pe. miFuncion('Hola Mundo', 3) devolverá Hola Mundo Hola Mundo Hola Mundo. */
+
+let hola = "Hola mundo";
+
+for (let i = 0; i < 3; i++) {
+    console.log(hola + " yeah buddy")
+}

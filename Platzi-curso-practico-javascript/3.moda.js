@@ -1,5 +1,3 @@
-/* Decidi dejarlo hasta aca temporalmente con el fin de practicar por mi cuenta, y luego si retomar */
-
 const lista1 = [1,2,3,1,2,3,4,2,2,2,1];
 
 const lista1Count = {};
@@ -12,6 +10,13 @@ lista1.map(
         else {
             lista1Count[elemento] = 1;
         }
-        lista1Count[elemento] = 1;
     }
 );
+
+const lista1Array = Object.entries(lista1Count).sort(
+    function (elementoA, elementoB) {
+        return elementoA[1] - elementoB[1]; 
+    }
+);
+
+const moda = lista1Array[lista1Array.length -1];
