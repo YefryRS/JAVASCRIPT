@@ -1,0 +1,4 @@
+1. Vamos a tener una lista de personas de paises diferentes paises.
+2. Y tambien ingresos mensuales fijos de las personas.
+
+Vamos a analizar el total del dinero, el promedio, la mediana. Y la gente normal del top del 10%.
