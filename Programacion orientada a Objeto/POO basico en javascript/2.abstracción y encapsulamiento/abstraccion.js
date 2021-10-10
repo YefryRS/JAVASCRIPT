@@ -87,19 +87,6 @@ let escuelaVideojuegos = new learningPaths({
 "curso de planeacion de videojuegos"]
 })
 
-
-// añadir comentarios a la clase estudiante
-
-/* class comments {
-    constructor({
-        name,
-        comentario,
-    }){
-        this.name = name;
-        this.comentario = comentario
-    }
-} */
-
 // clase principal
 class Student {
     constructor({
