@@ -13,15 +13,25 @@ class courses {
     }
     //pero necesitamos conseguir el nombre del curso, y para ello usaremos "getter"
     get name(){
-        
+        return this._name
+    }
+    // y con el set asignaremos el nombre del curso
+    set name(newName) {
+        if (newName === "Curso malito de programacion basica") {console.error("Deje la pendejada")} 
+        else {
+            this._name = newName;
+        }
     }
 }
 
 const cursoProgramacionBasica = new courses({
     name: "Curso gratis de programacion basica",
-    clases: TablasVerdad,
-    comments: usuario
+    clases: "TablasVerdad",
+    comments: "usuario"
 });
+
+cursoProgramacionBasica.name // Aqui tenemos la posibilidad de asignarle el nombre
+
 const CursoDefinitivoHTMLCSS = new courses({
     name: "curso definitivo de html y css"
 });
