@@ -8,8 +8,19 @@ class courses {
         comments
     }) {
         this._name = name; //con el guion bajo indicamos que no se puede llamar desde afuera
-        this.clases = clases;
+        this._clases = clases;
         this.comments = comments
+    }
+    get clases() {
+        return this._clases
+    }
+    set clases(newClases) {
+        if ( newClases === "TablasVerdad"){
+            this._clases = newClases
+        }
+        else {
+            console.error("No sea pendejo")
+        }
     }
     //pero necesitamos conseguir el nombre del curso, y para ello usaremos "getter"
     get name(){
@@ -24,13 +35,14 @@ class courses {
     }
 }
 
+// Ruta de programacion basica
 const cursoProgramacionBasica = new courses({
-    name: "Curso gratis de programacion basica",
-    clases: "TablasVerdad",
     comments: "usuario"
 });
 
-cursoProgramacionBasica.name // Aqui tenemos la posibilidad de asignarle el nombre
+cursoProgramacionBasica.name = "Curso gratis de programacion basica" // Aqui tenemos la posibilidad de asignarle el nombre
+cursoProgramacionBasica.clases = "TablasVerdad";
+
 
 const CursoDefinitivoHTMLCSS = new courses({
     name: "curso definitivo de html y css"
