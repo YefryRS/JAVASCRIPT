@@ -1,5 +1,28 @@
-/* El encapsulamiento consiste en limitar o esconder el acceso de algunos atributos y propiedades de nuestros objetos, con el fin de que no se puedan alterar nuestros metodos y atributos */
+function videoPlay(id){
+    let urlSecreta = "https://Platziscrto.com" + id;
+    console.log("Se esta producendo desde la url " + urlSecreta);
+}
+function videoStop(){
+    let urlSecreta = "https://Platziscrto.com" + id;
+    console.log("Pausamos la url " + urlSecreta);
+}
+// Con los exports indicamos cuales son las unicas partes de javascript que exportaremos a nuestro html
 
+export class PlatziClass {
+    constructor({
+        name,
+        videoID
+    }){
+        this.name = name;
+        this.videoID = videoID;
+    }
+    reproducir(){
+        videoPlay(this.videoID);
+    }
+    pausar(){
+        videoStop(this.videoID);
+    }
+}
 
 class courses {
     constructor({
@@ -7,7 +30,7 @@ class courses {
         clases = [],
         comments
     }) {
-        this._name = name; //con el guion bajo indicamos que no se puede llamar desde afuera
+        this._name = name; 
         this._clases = clases;
         this.comments = comments
     }
@@ -22,11 +45,9 @@ class courses {
             console.error("No sea pendejo")
         }
     }
-    //pero necesitamos conseguir el nombre del curso, y para ello usaremos "getter"
     get name(){
         return this._name
     }
-    // y con el set asignaremos el nombre del curso
     set name(newName) {
         if (newName === "Curso malito de programacion basica") {console.error("Deje la pendejada")} 
         else {

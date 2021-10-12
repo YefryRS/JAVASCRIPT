@@ -7,6 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="./encapsulamiento.js"></script>
+    <script src="./modulos.js" type="module"></script>
+    <script type="module" >
+        import { PlatziClass } from "./modulos.mjs";
+    </script>
 </body>
 </html>
+
+<!-- Con el type module hacemos que nuestros archivos no se puedan ver y debido a esto usaremos los imports y exports -->
