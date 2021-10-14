@@ -87,6 +87,7 @@ class Student {
         this.learningPaths = learningPaths
     }
 }
+
 let juan2 = new Student({
     name: "JuanDC",
     username: "juandc",

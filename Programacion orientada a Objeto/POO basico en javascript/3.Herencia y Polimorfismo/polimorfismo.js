@@ -1,3 +1,24 @@
+class Comment {
+    constructor({
+        content,
+        studentName,
+        studentRole = "Estudiante",
+    }){
+        this.content = content;
+        this.studentName = studentName;
+        this.studentRole = studentRole;
+        this.likes = 0;
+    }
+
+    publicar() {
+        console.log(this.studentName + " (" + this.studentRole + ")");
+        console.log(this.likes + " likes");
+        console.log(this.content);
+    }
+}
+
+
+
 function videoPlay(id){
     let urlSecreta = "https://Platziscrto.com" + id;
     console.log("Se esta producendo desde la url " + urlSecreta);
@@ -62,7 +83,7 @@ class courses {
 // Ruta de programacion basica
 const cursoProgramacionBasica = new courses({
     comments: "usuario",
-    isFree: true //aqui agragamos la propiedad
+    isFree: true 
 });
 
 cursoProgramacionBasica.name = "Curso gratis de programacion basica" 
@@ -75,7 +96,7 @@ const CursoDefinitivoHTMLCSS = new courses({
 CursoDefinitivoHTMLCSS.name = "curso definitivo de html y css"
 
 const cursoPracticoHTMLCSS = new courses({
-    lang: "english" // aqui agregamos otra propiedad
+    lang: "english" 
 });
 cursoPracticoHTMLCSS.name = "curso practico de html y css"
 
@@ -115,9 +136,6 @@ escuelaVideojuegos.name = "escuela de Videojuegos";
 
 
 
-// La herencia consiste en crear una clase principal, con el fin de crear otras clases que pueden tomar los atributos y metodos de nuestra clase principal. En el siguiente ejemplo se vera su utilidad
-
-//En este caso la clase Student sera nuestra clase padre
 
 class Student {
     constructor({
@@ -141,6 +159,14 @@ class Student {
         this.approvedCourses = approverCourses;
         this.learningPaths = learningPaths
     }
+
+    publicarComentario(commentContent) {
+        const comentario = new Comment({
+            content: commentContent,
+            studentName: this.name,
+        })
+        comentario.publicar();
+    }
 };
 
 class FreeStudent extends Student{
@@ -157,7 +183,7 @@ class FreeStudent extends Student{
     }
 }
 
-// podremos heredar las propiedades mediante la palabra reservada extends
+
 class BasicStudent extends Student{
     constructor(props) {
         super(props);
@@ -172,11 +198,29 @@ class BasicStudent extends Student{
     }
 }
 class ExpertStudent extends Student{
-    constructor(){
+    constructor(props){
         super(props);
     }
     approveCourses(newCourse) {
         this.approvedCourses.push(newCourse);
+    }
+}
+
+class TeacherStudent extends Student{
+    constructor(props){
+        super(props);
+    }
+    approveCourses(newCourse) {
+        this.approvedCourses.push(newCourse);
+    }
+
+    publicarComentario(commentContent) {
+        const comentario = new Comment({
+            content: commentContent,
+            studentName: this.name,
+            studentRole: "Teacher"
+        })
+        comentario.publicar();
     }
 }
 
@@ -201,5 +245,13 @@ let Yefry = new BasicStudent({
     comments: "Este es un comentario"
 });
 
+let Freddy = new TeacherStudent({
+    name: "Freddy",
+    username: "Freddier",
+    username: "Freddy@gmail.com",
+})
+Freddy.publicarComentario("Hello everybody");
+
+console.log(Freddy);
 console.log(juan2);
 console.log(Yefry)
