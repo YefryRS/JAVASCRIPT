@@ -64,3 +64,21 @@ else {
     console.log("Te equivocastes perro")
 }
 
+
+
+/* Escribir un programa que pida al usuario que introduzca una frase en la consola y muestre por pantalla la frase invertida. */
+
+let nombre = "yefry";
+
+let newNombre = nombre.split("").reverse().join("")
+console.log (newNombre);
+
+/* Escribir un programa que pregunte el nombre del usuario en la consola y después de que el usuario lo introduzca muestre por pantalla <NOMBRE> tiene <n> letras, donde <NOMBRE> es el nombre de usuario en mayúsculas y <n> es el número de letras que tienen el nombre. */
+
+function nameUsuario(nombre) {
+    let letrasName = nombre.length;
+    console.log (`el numero de letras es de ${letrasName}`);
+}
+nameUsuario("Yefry")
+
+/* Ejercicios de condicionales */
