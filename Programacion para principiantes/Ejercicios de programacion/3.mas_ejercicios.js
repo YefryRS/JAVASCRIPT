@@ -79,6 +79,6 @@ function nameUsuario(nombre) {
     let letrasName = nombre.length;
     console.log (`el numero de letras es de ${letrasName}`);
 }
-nameUsuario("Yefry")
+nameUsuario("Yefry");
 
 /* Ejercicios de condicionales */
