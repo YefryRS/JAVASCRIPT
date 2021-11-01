@@ -26,6 +26,22 @@ let listOfNames = names.map(function (item) {
 // es6
 let listOfNames2 = names.map(item => console.log(item.name));
 
+// otra forma de hacerlo es
+const listOfNames3 = (name,age,country) => {
+    
+}
+
+//Si solamente tenemos un solo parametro, podemos hacerlo de la siguiente manera
+const listOfNames3 = name => {
+    
+}
+
+//Si solamente tenemos un solo parametro y ademas solo vamos a retornar una sola cosa podemos omitir las llaves.
+
+const listOfNames3 = num => num * num;
+
+
+ 
 /* 3. Promesas, con las que podemos trabajar el asincronismo */
 
 const helloPromise = () => {
@@ -41,4 +57,4 @@ const helloPromise = () => {
 
 helloPromise()
 .then(Response => console.log(Response))
-.catch(error => console.log(error));
+.catch(error => console.log(error));          
