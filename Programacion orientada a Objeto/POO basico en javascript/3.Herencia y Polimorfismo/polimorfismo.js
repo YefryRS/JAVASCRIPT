@@ -1,3 +1,4 @@
+// El polimorfismo es como una herencia 2.0
 class Comment {
     constructor({
         content,
@@ -136,7 +137,7 @@ escuelaVideojuegos.name = "escuela de Videojuegos";
 
 
 
-
+// Aqui seguimos
 class Student {
     constructor({
         name,
@@ -206,6 +207,7 @@ class ExpertStudent extends Student{
     }
 }
 
+// Se hereda el metodo, pero se le cambia unicamente a esta clase
 class TeacherStudent extends Student{
     constructor(props){
         super(props);

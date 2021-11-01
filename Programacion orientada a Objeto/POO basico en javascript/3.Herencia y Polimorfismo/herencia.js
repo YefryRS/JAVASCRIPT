@@ -143,9 +143,9 @@ class Student {
     }
 };
 
-class FreeStudent extends Student{
+class FreeStudent extends Student{ // con extends solicitamos extender las propiedades
     constructor(props) {
-        super(props);
+        super(props); //Con super llamamos al constructor de la clase madre
     }
     approveCourses(newCourse) {
         if(newCourse.isFree){
