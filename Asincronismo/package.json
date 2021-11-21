@@ -1,0 +1,11 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "callback.js",
+  "scripts": {
+    "callback": "node src/callback.js"
+  },
+  "author": "Yefry <yefryrodelo@gmail.com>",
+  "license": "MIT"
+}
